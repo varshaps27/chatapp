@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Chat</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-800 text-white flex items-center justify-center h-screen">
+  <div class="w-full max-w-md p-4 space-y-4 bg-gray-900 rounded shadow">
+    <input id="username" placeholder="Enter username" class="w-full p-2 rounded text-black"/>
+    <div id="chat" class="hidden">
+      <div id="messages" class="h-64 overflow-y-scroll border p-2 mb-2 bg-white text-black"></div>
+      <input id="messageInput" class="w-full p-2 text-black" placeholder="Type..."/>
+    </div>
+    <button id="loginBtn" class="bg-blue-500 px-4 py-2 rounded">Login</button>
+  </div>
+</body>
+</html>
